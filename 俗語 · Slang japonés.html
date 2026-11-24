@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>俗語 · Slang japonés</title>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f1e3;--card:#fffaf0;--ink:#2b2220;--red:#c1272d;--mut:#6f6054;--ok:#2e7d4f;--bad:#b3261e;--line:#e3d6bd;--warn:#a85f00;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1716;--card:#2a2120;--ink:#f3e9d8;--mut:#b5a595;--line:#43352f;--red:#e8666b;--warn:#f0a63c;--ok:#5fbf86;--bad:#ff8a80}}
+:root[data-theme="dark"]{--bg:#1d1716;--card:#2a2120;--ink:#f3e9d8;--mut:#b5a595;--line:#43352f;--red:#e8666b;--warn:#f0a63c;--ok:#5fbf86;--bad:#ff8a80}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif;line-height:1.5}
+.jp{font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif}
+button{font:inherit;color:inherit;cursor:pointer}:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+header{text-align:center;padding:26px 16px 8px}
+.sun{width:56px;height:56px;border-radius:50%;background:var(--red);margin:0 auto 8px;display:grid;place-items:center;color:#fff;font-size:30px;font-weight:700}
+h1{margin:0;font-size:1.7rem;letter-spacing:.08em}header p{margin:4px 0 0;color:var(--mut)}
+.tabs{display:flex;justify-content:center;gap:6px;padding:12px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+.tab{border:2px solid var(--red);background:var(--card);padding:8px 20px;border-radius:8px;font-weight:700;color:var(--red)}
+.tab.on{background:var(--red);color:#fff}
+main{max-width:1060px;margin:0 auto;padding:0 16px 48px}
+.row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:8px 0}
+.chip{border:1.5px solid var(--line);background:var(--card);padding:6px 13px;border-radius:999px}
+.chip.on{border-color:var(--red);background:var(--red);color:#fff}
+.sr{display:block;width:100%;max-width:460px;margin:10px auto;padding:10px 14px;font:inherit;font-size:1rem;border:2px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink)}
+section{--a:var(--red);margin-top:26px}
+h2{display:flex;align-items:center;gap:10px;margin:0 0 4px;font-size:1.35rem}
+.ic{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:color-mix(in srgb,var(--a) 22%,var(--card));font-size:1.35rem;flex:none}
+.pat{margin:0 0 12px;padding:8px 12px;background:var(--card);border-left:4px solid var(--a);border-radius:6px;font-size:.92rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px;align-items:start}
+.c{--a:var(--red);background:var(--card);border:1px solid var(--line);border-top:4px solid var(--a);border-radius:10px;padding:12px;cursor:pointer}
+.c:hover{border-color:var(--a)}
+.top{display:flex;align-items:center;gap:12px}.top>div{flex:1;min-width:0}
+.k{display:block;line-height:1.2;overflow-wrap:anywhere}.r{color:var(--red);font-size:.9rem}
+.lv{font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:1px 8px;white-space:nowrap}.l2{color:var(--warn);border-color:var(--warn)}
+.m{margin:8px 0 0;font-weight:700}.lit{margin:4px 0 0;font-size:.88rem;color:var(--mut);font-style:italic}
+.x{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:.92rem}.c.open .x{display:block}
+.tip{margin:0 0 8px;color:var(--mut)}.lb{font-size:.72rem;color:var(--red);font-weight:700}.ex{font-size:1.1rem;font-weight:500}
+.hint{text-align:center;color:var(--mut);font-size:.88rem}
+.wod{max-width:560px;margin:14px auto 0}.wod .lb{display:block;text-align:center;margin-bottom:4px}
+.go{display:block;margin:16px auto 0;background:var(--ink);color:var(--bg);border:0;padding:11px 26px;border-radius:8px;font-weight:700}
+.link{background:none;border:0;color:var(--red);text-decoration:underline;padding:4px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:14px}
+.qa{max-width:560px;margin:14px auto 0;text-align:center}
+.bar{height:6px;background:var(--line);border-radius:4px;overflow:hidden;margin-bottom:12px}.bar i{display:block;height:100%;background:var(--red)}
+.qa .big{font-size:3rem;line-height:1.25}
+.o{display:block;width:100%;margin:8px 0;padding:11px;border:1.5px solid var(--line);border-radius:8px;background:var(--bg)}
+.o.ok{background:var(--ok);color:#fff;border-color:var(--ok)}.o.bad{background:var(--bad);color:#fff;border-color:var(--bad)}
+.fb{min-height:60px;font-size:.95rem;margin-top:8px;text-align:left}.fb strong{display:block;font-size:1.1rem}
+.mut{color:var(--mut)}.w{color:var(--warn)}[hidden]{display:none!important}
+</style></head><body>
+<header><div class="sun jp">俗</div><h1>俗語 · Slang japonés</h1><p>Calle, chat, oficina, anime y mucho más: más de 180 expresiones.</p></header>
+<div class="tabs"><button class="tab on" data-t="ex">Explorar</button><button class="tab" data-t="qz">Quiz</button></div>
+<main>
+<div id="ex"><div class="wod" id="wod"></div>
+ <input class="sr" id="q" type="search" placeholder="Buscar: やばい, yabai, fuerte…" aria-label="Buscar">
+ <div class="row" id="cf"></div><div class="row" id="lf"></div>
+ <p class="hint"><span id="cnt"></span> · Toca una tarjeta para ver nota y ejemplo · <button class="link" id="ta">Abrir todas</button></p>
+ <div id="cards"></div></div>
+<div id="qz" hidden><div class="box qa" id="qa"></div></div>
+</main>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const JW=t=>String(t).replace(/[\u3040-\u30ff\u3400-\u9fff々〜～ー・]+/g,'<span class="jp">$&</span>');
+const pick=a=>a[Math.random()*a.length|0],shuf=a=>a.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+const H="あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ";
+const R="a i u e o ka ki ku ke ko sa shi su se so ta chi tsu te to na ni nu ne no ha hi fu he ho ma mi mu me mo ya yu yo ra ri ru re ro wa o n ga gi gu ge go za ji zu ze zo da ji zu de do ba bi bu be bo pa pi pu pe po".split(" ");
+function ro(t){const s=[...t].map(c=>c>="ァ"&&c<="ヶ"?String.fromCharCode(c.charCodeAt(0)-96):c);let o="",g=0;
+ for(let i=0;i<s.length;i++){const c=s[i];if(c=="っ"){g=1;continue}if(c=="ー"){o+=o.slice(-1);continue}
+  const j=H.indexOf(c);if(j<0){o+=c;continue}let r=R[j];const y="ゃゅょ".indexOf(s[i+1]),z="ぁぃぅぇぉ".indexOf(s[i+1]);if(z>=0){r=(c=="ふ"?"f":r.slice(0,-1))+"aiueo"[z];i++}
+  if(y>=0){const v="auo"[y];r=["shi","chi","ji"].includes(r)?r.slice(0,-1)+v:r.slice(0,-1)+"y"+v;i++}
+  if(g){r=(r[0]=="c"?"t":r[0])+r;g=0}o+=r}return o}
+// categorías: id → [nombre, icono, color, patrón]
+const C={
+r:["Reacciones","😲","#c1272d","Reacciones cortas, sin です/ます. El tono lo es todo: やばい puede ser elogio o desastre."],
+o:["Opiniones","💬","#2a6fb0","Casi todos son adjetivos い y conjugan igual: うざい → うざかった / うざくない."],
+a:["Abreviaturas","✂️","#4a8a5c","Recortes de 2 + 2 moras: あけましておめでとう → あけおめ; スマートフォン → スマホ."],
+f:["Fin de frase","🗣️","#b86e00","Contracciones del habla: では → じゃ, でしょ → っしょ, てしまう → ちゃう, ておく → とく."],
+n:["Onomatopeyas","🔊","#2b7a9a","Dos tipos: sonidos (ザーザー) y estados (ふわふわ). Suelen duplicarse y van con する, と o に."],
+i:["Internet y chat","📱","#8a4a9a","Mezclan inglés, kanji de broma y verbos con る: Google → ググる, buzz → バズる."],
+g:["Jerga gal y juvenil","💅","#d6448a","Modas que nacen en redes y mueren rápido; muchas se acortan o usan sufijos como ～る."],
+t:["Otaku y fandom","🎮","#6a4fb0","Jerga de fans de anime, manga y juegos: préstamos, kanji de broma y metáforas religiosas."],
+e:["Expresiones de anime","🎬","#1f8a5b","Tópicos y gritos de anime y manga: sirven para entender escenas y bromas de fans."],
+s:["Insultos suaves","😤","#a1442a","Reproches que pueden ser cariñosos o hirientes según la relación. Úsalos con cuidado."],
+w:["Trabajo y estudio","💼","#238a86","Humor negro corporativo y abreviaturas. Aparecen en noticias, series y oficinas."],
+k:["Kansai-ben","🏯","#9a5b3a","Dialecto de Osaka y alrededores: だ → や, ない → へん/ん, とても → めっちゃ."],
+m:["Modismos","🎭","#b0386a","Su traducción literal dice otra cosa. Lee primero el sentido literal y luego el significado real."],
+p:["Proverbios","📜","#5a6b2a","Sabiduría popular en una o dos oraciones; muchos usan animales y naturaleza."],
+y:["四字熟語","🀄","#3a4a9a","Cuatro kanji, una idea completa. Origen chino; se usan en discursos, ensayos y exámenes."]};
+const LV=[["😎","Amigos","Solo con amigos"],["🙂","Neutro","Seguro en casi todo contexto"],["⚠️","Cuidado","Cuidado: puede ofender"]];
+const D=`r|やばい||¡qué fuerte! (bueno o malo)|0|Adjetivo comodín: puede ser elogio o desastre; el contexto decide.||このラーメン、やばい！|Kono raamen, yabai!|¡Este ramen es una locura!
+r|マジ||en serio, de verdad|0|De 真面目. マジで？ = ¿en serio?||マジで？ 明日テストだよ。|Maji de? Ashita tesuto da yo.|¿En serio? Mañana hay examen.
+r|うそ||¡no puede ser!|0|Literal “mentira”, pero como reacción no acusa a nadie.||うそ！ 本当に？|Uso! Hontou ni?|¡No puede ser! ¿De verdad?
+r|やった||¡bien! ¡lo logré!|0|Pasado de やる; celebra un logro.||やった！ 合格した！|Yatta! Goukaku shita!|¡Bien! ¡Aprobé!
+r|ウケる||dar risa|0|Verbo 2: ウケた, ウケない.||それ、ウケる！|Sore, ukeru!|¡Eso da risa!
+r|めっちゃ||muy, súper|0|Origen Kansai, hoy nacional; va antes del adjetivo.||めっちゃ美味しい！|Meccha oishii!|¡Está riquísimo!
+r|やっぱり||lo sabía, como pensaba|0|Casual de やはり; también やっぱ.||やっぱり雨だ。|Yappari ame da.|Lo sabía, llueve.
+r|ガチ||en serio, a fondo|0|De ガチンコ (combate real). ガチで = “en serio”.||ガチで疲れた。|Gachi de tsukareta.|Estoy agotado de verdad.
+o|微妙|びみょう|meh, regular|1|En la calle no es “sutil”: algo flojo o dudoso.||この映画、ちょっと微妙。|Kono eiga, chotto bimyou.|Esta peli es medio floja.
+o|大丈夫|だいじょうぶ|estoy bien / no gracias|1|Según el contexto: “estoy bien” o rechazo educado.||袋は大丈夫です。|Fukuro wa daijoubu desu.|No necesito bolsa, gracias.
+o|ダサい||cutre, de mal gusto|0|Opuesto de かっこいい.||その服、ちょっとダサい。|Sono fuku, chotto dasai.|Esa ropa es medio cutre.
+o|うざい||molesto, pesado|2|Fuerte, casi un insulto; solo entre cercanos.||あいつ、うざい。|Aitsu, uzai.|Ese tipo es un pesado.
+o|エモい||emotivo, nostálgico|0|De “emotional” + い; エモかった.||この曲、エモい。|Kono kyoku, emoi.|Esta canción da nostalgia.
+o|ありえない||imposible, inaceptable|0|Literal “no puede existir”; sirve para quejarse.||遅刻？ ありえない！|Chikoku? Arienai!|¿Llegar tarde? ¡Inaceptable!
+o|神|かみ|genial, increíble|0|神～ = excelente: 神対応, 神曲.|Literal “dios”|この店、神！|Kono mise, kami!|¡Este local es lo máximo!
+o|しんどい||agotador, pesado|0|Origen Kansai; cansancio físico o mental.||今日はしんどい。|Kyou wa shindoi.|Hoy estoy agotado.
+a|了解|りょうかい|entendido|1|En chat: りょ.||りょ！ 後でね。|Ryo! Ato de ne.|¡Entendido! Luego nos vemos.
+a|あけおめ||feliz año nuevo|0|Recorte de あけましておめでとう; se responde ことよろ.||あけおめ！ ことよろ！|Akeome! Kotoyoro!|¡Feliz año! ¡Que sea bueno!
+a|スマホ||smartphone|1|Recorte de スマートフォン.||スマホを忘れた。|Sumaho o wasureta.|Olvidé el móvil.
+a|コンビニ||tienda de conveniencia|1|Recorte de コンビニエンスストア.||コンビニに行く。|Konbini ni iku.|Voy al konbini.
+a|お疲れ|おつかれ|buen trabajo / hasta luego|1|Recorte de お疲れ様; saludo laboral.||お疲れ！ また明日。|Otsukare! Mata ashita.|¡Buen trabajo! Hasta mañana.
+a|ファミレス||restaurante familiar|1|Recorte de ファミリーレストラン.||ファミレスで食べよう。|Famiresu de tabeyou.|Comamos en un famiresu.
+a|就活|しゅうかつ|búsqueda de empleo|1|Recorte de 就職活動. Igual: 婚活 (buscar pareja).||今、就活中です。|Ima, shuukatsu chuu desu.|Ahora busco trabajo.
+a|パソコン||ordenador|1|Recorte de パーソナルコンピューター.||パソコンが壊れた。|Pasokon ga kowareta.|Se rompió el ordenador.
+f|じゃん||¿ves? ¡pero si…!|0|Contracción de ではないか. いいじゃん = “¡está bien!”.||いいじゃん！|Ii jan!|¡Está bien!
+f|っしょ||¿no? seguro que…|0|Recorte de でしょ.||行くっしょ？|Iku ssho?|¿Vamos, no?
+f|ちゃう||terminar haciendo, sin querer|0|て+しまう → ちゃう (ん: じゃう).||全部食べちゃった。|Zenbu tabechatta.|Me lo comí todo sin querer.
+f|っす||es, soy (casual-cortés)|0|Recorte de です; habla de jóvenes y deportistas.||おはようっす！|Ohayou ssu!|¡Buenos días!
+f|だよね||¿verdad? ¿cierto?|0|Pide acuerdo del otro.||寒いよね？|Samui yo ne?|Hace frío, ¿verdad?
+f|とく||hacer de antemano|0|て+おく → とく.||先に買っとくね。|Saki ni kattoku ne.|Lo compro antes, ¿vale?
+f|っけ||¿cómo era…? (recordar)|0|Para recordar algo.||あれ、今日だっけ？|Are, kyou dakke?|Ah, ¿era hoy?
+f|かな||me pregunto si…|0|Monólogo.||明日、晴れるかな。|Ashita, hareru kana.|Me pregunto si mañana habrá sol.
+i|草|くさ|jaja|0|Por w (risa), que parece hierba. 草生える.|Literal “hierba”|それ草。|Sore kusa.|Eso da risa.
+i|笑|わら|jaja (en texto)|0|(笑) o w al final de frase; www = risa fuerte.|Literal “reír”|試験落ちた（笑）|Shiken ochita (wara).|Reprobé el examen (jaja).
+i|既読スルー|きどくスルー|leer y no responder|0|既読 = “leído”; スルー = pasar de largo.||既読スルーされた…|Kidoku suruu sareta…|Me dejó en visto…
+i|ググる||buscar en Google|0|Google + る; ググった, ググれば.||ググれば分かるよ。|Guguru ba wakaru yo.|Búscalo en Google.
+i|バズる||hacerse viral|0|buzz + る.||この動画、バズってる！|Kono douga, bazutteru!|¡Este video es viral!
+i|推し|おし|tu favorito (idol, personaje)|0|Fandom: 推しが尊い.||私の推しは彼です。|Watashi no oshi wa kare desu.|Mi favorito es él.
+i|尊い|とうとい|tan bello que conmueve|0|En fandom: algo que te emociona demasiado.|Literal “valioso, noble”|推しが尊すぎる…|Oshi ga toutosugiru…|Mi fav es demasiado hermoso…
+i|ワンチャン||quizá haya posibilidad|0|De “one chance”: una pequeña oportunidad.||ワンチャン行けるかも。|Wanchan ikeru kamo.|Con suerte quizá pueda ir.
+w|社畜|しゃちく|esclavo de la empresa|1|Autoironía: 会社 + 家畜 (ganado).|Literal “ganado de la empresa”|毎日残業で社畜だ。|Mainichi zangyou de shachiku da.|Con horas extras diarias soy un esclavo de la empresa.
+w|ブラック||empresa explotadora|1|ブラック企業 = malas condiciones laborales.|Literal “negro”|あの会社はブラックだ。|Ano kaisha wa burakku da.|Esa empresa es explotadora.
+w|残業|ざんぎょう|horas extras|1|Neutro pero omnipresente.||今日も残業だ。|Kyou mo zangyou da.|Hoy también hay horas extras.
+w|サボる||hacer novillos, holgazanear|0|De sabotage + る.||授業をサボった。|Jugyou o sabotta.|Me salté la clase.
+w|ホウレンソウ||informar, comunicar y consultar|1|Juego con 報告・連絡・相談 (hōkoku, renraku, sōdan).|Literal “espinaca”|ホウレンソウを忘れずに。|Hourensou o wasurezu ni.|No olvides informar y consultar.
+w|飲みニケーション|のみにけーしょん|socializar bebiendo con colegas|1|飲む + コミュニケーション.||今夜は飲みニケーションだ。|Konya wa nominikeeshon da.|Esta noche, copas con colegas.
+w|ドタキャン||cancelar a última hora|0|ドタ (de repente) + キャンセル.||ドタキャンはやめて。|Dotakyan wa yamete.|No canceles a última hora.
+w|一夜漬け|いちやづけ|empollar la víspera|1|Como los encurtidos que se hacen en una noche.|Literal “encurtido de una noche”|一夜漬けで試験を受けた。|Ichiyazuke de shiken o uketa.|Hice el examen empollando de víspera.
+k|おおきに||gracias|0|Gracias en Kansai.||おおきに！ また来てな。|Ookini! Mata kite na.|¡Gracias! ¡Vuelve!
+k|なんでやねん||¿¡cómo es eso!? (réplica cómica)|0|Réplica típica del manzai (comedia).||なんでやねん！|Nande ya nen!|¡¿Pero por qué?!
+k|ほんま||de verdad|0|Kansai de 本当.||ほんまに？|Honma ni?|¿De verdad?
+k|あかん||no sirve, no se puede|0|Equivale a だめ.||それはあかんで。|Sore wa akan de.|Eso no se puede.
+k|ええ||bueno, bien|0|Kansai de いい.||ええ天気やな。|Ee tenki ya na.|Qué buen tiempo.
+k|アホ||tonto|2|En Kansai es suave entre amigos; en Tokio suena más fuerte que ばか.||何してんねん、アホ！|Nani shitenen, aho!|¿Qué haces, tonto?
+k|せやな||así es, cierto|0|それやな → せやな.||せやな、行こか。|Seya na, ikoka.|Cierto, vamos.
+k|おもろい||gracioso|0|Kansai de 面白い.||あの人、おもろいな。|Ano hito, omoroi na.|Ese tipo es gracioso.
+m|猫の手も借りたい|ねこの て も かりたい|estoy tan ocupado que aceptaría cualquier ayuda|1|Se dice cuando hay demasiado trabajo.|Literal “quiero hasta la pata de un gato”|忙しくて猫の手も借りたい。|Isogashikute neko no te mo karitai.|Estoy tan ocupado que necesito ayuda de quien sea.
+m|顔が広い|かお が ひろい|conocer a mucha gente|1|Tiene contactos en todas partes.|Literal “cara ancha”|彼は顔が広い。|Kare wa kao ga hiroi.|Él conoce a mucha gente.
+m|耳が痛い|みみ が いたい|una crítica que duele porque es cierta|1|Oír algo incómodo pero verdadero.|Literal “duele la oreja”|その話は耳が痛い。|Sono hanashi wa mimi ga itai.|Eso me duele oírlo (tienes razón).
+m|目がない|め が ない|ser fan de algo, no resistirse|1|Con gustos: 甘い物に目がない.|Literal “no tener ojos”|甘い物に目がない。|Amai mono ni me ga nai.|No me resisto a los dulces.
+m|油を売る|あぶら を うる|perder el tiempo charlando|1|Dícese de quien se distrae en el trabajo.|Literal “vender aceite”|どこで油を売ってたの？|Doko de abura o utteta no?|¿Dónde perdías el tiempo?
+m|鼻が高い|はな が たかい|sentirse orgulloso|1|Orgullo por logros ajenos (hijos, alumnos).|Literal “nariz alta”|息子が優勝して鼻が高い。|Musuko ga yuushou shite hana ga takai.|Estoy orgulloso de que mi hijo ganó.
+m|水に流す|みず に ながす|perdonar y olvidar|1|Dejar el pasado atrás.|Literal “echar al agua”|過去は水に流そう。|Kako wa mizu ni nagasou.|Dejemos el pasado atrás.
+m|空気を読む|くうき を よむ|leer el ambiente|1|Intuir lo que el grupo espera. 空気が読めない = KY.|Literal “leer el aire”|もっと空気を読んでよ。|Motto kuuki o yonde yo.|Lee un poco más el ambiente.
+p|七転び八起き|なな ころび や おき|nunca te rindas|1|Cae y levántate una vez más.|Literal “siete caídas, ocho levantadas”|七転び八起きだよ。|Nanakorobi yaoki da yo.|¡No te rindas!
+p|猿も木から落ちる|さる も き から おちる|hasta el mejor se equivoca|1|Los expertos también fallan.|Literal “hasta los monos caen de los árboles”|猿も木から落ちるね。|Saru mo ki kara ochiru ne.|Hasta los expertos se equivocan.
+p|急がば回れ|いそがば まわれ|despacio se llega más lejos|1|El camino seguro resulta más rápido.|Literal “si tienes prisa, da la vuelta”|急がば回れだよ。|Isogaba maware da yo.|Con prisa, mejor ir seguro.
+p|花より団子|はな より だんご|lo práctico antes que lo bonito|1|Quien va a ver flores pero piensa en comer.|Literal “dumplings antes que flores”|私は花より団子だ。|Watashi wa hana yori dango da.|Yo prefiero la comida a las flores.
+p|井の中の蛙|い の なか の かわず|vivir en una burbuja, ver poco mundo|1|Completo: 井の中の蛙大海を知らず.|Literal “rana del pozo”|彼は井の中の蛙だ。|Kare wa i no naka no kawazu da.|Él vive en su burbuja.
+p|三人寄れば文殊の知恵|さんにん よれば もんじゅ の ちえ|dos cabezas piensan mejor que una|1|Monju es el bodhisattva de la sabiduría.|Literal “tres juntos = sabiduría de Monju”|三人寄れば文殊の知恵だね。|Sannin yoreba monju no chie da ne.|Dos cabezas piensan mejor que una.
+p|出る杭は打たれる|でる くい は うたれる|el que destaca recibe críticas|1|Refleja la presión de no sobresalir.|Literal “la estaca que sobresale es martillada”|出る杭は打たれると言う。|Deru kui wa utareru to iu.|Dicen que al que sobresale lo critican.
+p|馬の耳に念仏|うま の みみ に ねんぶつ|hablar a oídos sordos|1|Palabras sabias que nadie escucha.|Literal “oración budista en la oreja de un caballo”|何を言っても馬の耳に念仏だ。|Nani o ittemo uma no mimi ni nenbutsu da.|Digas lo que digas, es hablar a oídos sordos.
+y|一石二鳥|いっせき に ちょう|matar dos pájaros de un tiro|1|Un solo esfuerzo, dos beneficios.|Literal “una piedra, dos pájaros”|これは一石二鳥だ。|Kore wa isseki nichou da.|Esto mata dos pájaros de un tiro.
+y|十人十色|じゅうにん と いろ|cada persona es un mundo|1|Los gustos varían.|Literal “diez personas, diez colores”|十人十色だね。|Juunin toiro da ne.|Cada uno es diferente.
+y|以心伝心|いしん でんしん|entenderse sin hablar|1|Telepatía entre personas cercanas.|Literal “de corazón a corazón, transmitir”|二人は以心伝心だ。|Futari wa ishin denshin da.|Los dos se entienden sin hablar.
+y|一期一会|いちご いちえ|este encuentro es único: valóralo|1|Ceremonia del té: cada encuentro ocurre una sola vez.|Literal “una vez, un encuentro”|一期一会を大切に。|Ichigo ichie o taisetsu ni.|Valora cada encuentro.
+y|自業自得|じごう じとく|cosechas lo que siembras|1|Las consecuencias son culpa propia.|Literal “acto propio, ganancia propia”|それは自業自得だよ。|Sore wa jigou jitoku da yo.|Eso te lo buscaste.
+y|七転八倒|しちてん ばっとう|retorcerse de dolor|1|¡No confundir con 七転び八起き!|Literal “siete vueltas, ocho caídas”|痛みで七転八倒した。|Itami de shichiten battou shita.|Me retorcí de dolor.
+y|弱肉強食|じゃくにく きょうしょく|ley del más fuerte|1|Los débiles son presa de los fuertes.|Literal “carne débil, comida del fuerte”|自然界は弱肉強食だ。|Shizenkai wa jakuniku kyoushoku da.|En la naturaleza manda la ley del más fuerte.
+y|臨機応変|りんき おうへん|adaptarse a la situación|1|Cambiar de plan según el momento.|Literal “ante la ocasión, responder y cambiar”|臨機応変に対応する。|Rinki ouhen ni taiou suru.|Me adapto según la situación.
+r|すごい||¡increíble! ¡qué bueno!|0|Elogio o asombro; すげー es más crudo.||この絵、すごい！|Kono e, sugoi!|¡Este dibujo es increíble!
+r|まさか||¡no me digas! (inesperado)|0|Expresa incredulidad ante algo imprevisto.||まさか、本当に来たの？|Masaka, hontou ni kita no?|¿No me digas que vino de verdad?
+r|ちょっと…||un poco… (rechazo suave)|1|Dicho con voz dudosa es una negativa educada.||明日はちょっと…|Ashita wa chotto…|Mañana… no me va bien.
+o|最高|さいこう|lo mejor, genial|0|Elogio máximo.|Literal “el más alto”|このカレー、最高！|Kono karee, saikou!|¡Este curry es lo mejor!
+o|地味|じみ|soso, discreto|1|Opuesto de 派手 (llamativo).||彼は地味だけど優しい。|Kare wa jimi dakedo yasashii.|Es discreto pero amable.
+o|キモい||asqueroso, repulsivo|2|De 気持ち悪い. Hiriente: evítalo con desconocidos.||それ、キモい。|Sore, kimoi.|Eso es asqueroso.
+a|アプリ||aplicación|1|Recorte de アプリケーション.||このアプリ、便利だよ。|Kono apuri, benri da yo.|Esta app es muy útil.
+a|プレゼン||presentación|1|Recorte de プレゼンテーション.||明日、プレゼンがある。|Ashita, purezen ga aru.|Mañana tengo una presentación.
+a|ドンマイ||no te preocupes, ¡ánimo!|0|Del inglés “don’t mind”.||ドンマイ！ 次があるよ。|Donmai! Tsugi ga aru yo.|¡Ánimo! Habrá otra vez.
+f|って||dicen que / lo de…|0|Cita y tema informal.||彼って優しいよね。|Kare tte yasashii yo ne.|Él es amable, ¿verdad?
+f|さ||partícula para hilar la charla|0|Va tras pausas; muy coloquial.||昨日さ、友達に会ったんだ。|Kinou sa, tomodachi ni attanda.|Ayer, mira, vi a un amigo.
+f|ぜ||énfasis masculino fuerte|0|Tono brusco o de héroe de anime.||行くぜ！|Ikuze!|¡Vamos allá!
+i|炎上|えんじょう|polémica viral en redes|0|Críticas masivas contra alguien.|Literal “arder”|その発言で炎上した。|Sono hatsugen de enjou shita.|Ese comentario causó un escándalo.
+i|スクショ||captura de pantalla|0|Recorte de スクリーンショット.||スクショ撮っといて。|Sukusho tottoite.|Hazle una captura.
+i|フォロバ||seguir de vuelta|0|Recorte de フォローバック.||フォロバするね！|Foroba suru ne!|¡Te sigo de vuelta!
+w|有給|ゆうきゅう|vacaciones pagadas|1|Recorte de 有給休暇.||明日は有給を取る。|Ashita wa yuukyuu o toru.|Mañana me tomo un día libre.
+w|定時|ていじ|hora normal de salida|1|定時で帰る = irse sin horas extras.||今日は定時で帰る。|Kyou wa teiji de kaeru.|Hoy salgo a la hora.
+w|内定|ないてい|oferta de empleo confirmada|1|Se recibe antes de empezar.||内定をもらった！|Naitei o moratta!|¡Me dieron la oferta!
+k|ほな||pues, entonces|0|Despedida o conector.||ほな、また明日。|Hona, mata ashita.|Bueno, hasta mañana.
+k|ちゃうちゃう||no, no, qué va|0|Negación cómica de Kansai.||ちゃうちゃう、そうやない。|Chau chau, sou ya nai.|No, no, no es así.
+k|ごっつ||muy, enorme|0|Intensificador de Kansai.||ごっつええ店やで。|Gottsu ee mise ya de.|Es un local buenísimo.
+m|足を引っ張る|あし を ひっぱる|estorbar, frenar a otros|1|Impide el avance del grupo.|Literal “tirar del pie”|私が足を引っ張った。|Watashi ga ashi o hippatta.|Yo los frené.
+m|口が堅い|くち が かたい|saber guardar un secreto|1|Persona de confianza.|Literal “boca dura”|彼は口が堅い。|Kare wa kuchi ga katai.|Él guarda bien los secretos.
+m|腹を割る|はら を わる|hablar con franqueza|1|Abrir el corazón.|Literal “partir el vientre”|腹を割って話そう。|Hara o watte hanasou.|Hablemos con franqueza.
+p|灯台下暗し|とうだい もと くらし|lo más cercano es lo que no ves|1|Buscas lejos lo que está a tu lado.|Literal “bajo el faro, oscuridad”|灯台下暗しだった。|Toudai moto kurashi datta.|Estaba justo delante de mí.
+p|石の上にも三年|いし の うえ にも さんねん|la constancia da frutos|1|Hay que perseverar.|Literal “tres años incluso sobre una piedra”|石の上にも三年だよ。|Ishi no ue nimo sannen da yo.|Con constancia se logra.
+p|百聞は一見に如かず|ひゃくぶん は いっけん に しかず|ver vale más que oír|1|Mejor experimentar que escuchar.|Literal “cien oídas no igualan una vista”|百聞は一見に如かずだね。|Hyakubun wa ikken ni shikazu da ne.|Ver es mejor que oír.
+y|四苦八苦|しく はっく|sufrir mucho, pasarlas negras|1|Viene del budismo.|Literal “cuatro penas, ocho penas”|宿題に四苦八苦した。|Shukudai ni shiku hakku shita.|Sufrí con la tarea.
+y|起死回生|きし かいせい|remontar lo imposible|1|Un giro que lo salva todo.|Literal “despertar a la muerte, devolver la vida”|起死回生の一打だ。|Kishi kaisei no ichida da.|Es un golpe que lo salva todo.
+y|異口同音|いく どうおん|todos dicen lo mismo|1|Opinión unánime.|Literal “bocas distintas, misma voz”|皆が異口同音に賛成した。|Mina ga iku douon ni sansei shita.|Todos coincidieron.
+n|ドキドキ||latido fuerte (nervios, emoción)|1|Imita el corazón: ドキドキする.||テストの前はドキドキする。|Tesuto no mae wa dokidoki suru.|Antes del examen me late el corazón.
+n|ワクワク||ilusión, emoción ansiosa|1|Esperar algo bueno.||明日が楽しみでワクワクする。|Ashita ga tanoshimi de wakuwaku suru.|Mañana me emociona.
+n|ペラペラ||hablar con fluidez|1|Se dice de idiomas.||彼は英語がペラペラだ。|Kare wa eigo ga perapera da.|Él habla inglés con fluidez.
+n|ぺこぺこ||mucha hambre / hacer reverencias|1|Con お腹: hambre. Con 頭: inclinarse.||お腹がぺこぺこだ。|Onaka ga pekopeko da.|Me muero de hambre.
+n|ゴロゴロ||holgazanear / retumbar|1|Rodar, relajarse en casa o un trueno.||休日は家でゴロゴロする。|Kyuujitsu wa ie de gorogoro suru.|En días libres holgazaneo en casa.
+n|キラキラ||brillante, centelleante|1|キラキラネーム = nombres llamativos.||星がキラキラしている。|Hoshi ga kirakira shiteiru.|Las estrellas brillan.
+n|ふわふわ||esponjoso, suave|1|Pan, nubes, pelo.||このパン、ふわふわだ。|Kono pan, fuwafuwa da.|Este pan es esponjoso.
+n|ぐっすり||dormir profundamente|1|Va con 寝る/眠る.||昨夜はぐっすり寝た。|Sakuya wa gussuri neta.|Anoche dormí profundamente.
+n|イライラ||irritado, nervioso|1|Impaciencia.||待たされてイライラした。|Matasarete iraira shita.|Me irrité al hacerme esperar.
+n|ザーザー||lluvia fuerte|1|Sonido de aguacero.||外はザーザー降りだ。|Soto wa zaazaa buri da.|Afuera llueve a cántaros.
+g|ぴえん||estoy triste (🥺)|0|Sonido de llanto; moda juvenil.||テスト落ちた、ぴえん…|Tesuto ochita, pien…|Reprobé… qué pena.
+g|パリピ||fiestero|0|Recorte de “party people”.||彼はパリピだ。|Kare wa paripi da.|Él es un fiestero.
+g|インスタ映え|いんすたばえ|fotogénico en Instagram|0|Palabra del año en 2017.|Literal “se luce en Insta”|このカフェ、インスタ映えする！|Kono kafe, insutabae suru!|¡Este café es muy instagrameable!
+g|盛る|もる|retocar o exagerar (fotos)|0|También significa “servir comida”.|Literal “llenar, amontonar”|写真を盛った。|Shashin o motta.|Retoqué la foto.
+g|ぼっち||solo, sin amigos|0|De 独りぼっち. ぼっち飯 = comer solo.||昼ごはんはぼっちだった。|Hirugohan wa botchi datta.|Almorcé solo.
+g|リア充|りあじゅう|vida real plena (amigos, pareja)|0|Recorte de リアル充実.||彼はリア充だね。|Kare wa riajuu da ne.|Él lleva una vida social completa.
+g|ディスる||criticar o faltar el respeto|0|De “diss” + る.||友達をディスるな。|Tomodachi o disuru na.|No hables mal de tus amigos.
+g|マジ卍|まじまんじ|¡súper intenso! (comodín)|0|De 2017: los adolescentes la usan para casi todo.|Literal “en serio, símbolo manji”|このライブ、マジ卍！|Kono raibu, maji manji!|¡Este concierto es una locura!
+t|萌え|もえ|ternura por un personaje|0|Del verbo 萌える (brotar).|Literal “brotar”|この猫、萌え！|Kono neko, moe!|¡Este gato es adorable!
+t|オタク||fan obsesivo|0|Antes peyorativo; hoy se usa con orgullo.||私はアニメオタクだ。|Watashi wa anime otaku da.|Soy fan del anime.
+t|ハマる||engancharse|0|Entrar de lleno en una afición.|Literal “encajar”|ゲームにハマった。|Geemu ni hamatta.|Me enganché al juego.
+t|沼|ぬま|afición que te absorbe|0|Una vez dentro, no sales. 沼にハマる.|Literal “pantano”|この沼は深い。|Kono numa wa fukai.|Esta afición es un pozo sin fondo.
+t|聖地巡礼|せいち じゅんれい|visitar los lugares de tu anime|0|Fans viajan a escenarios reales.|Literal “peregrinación a lugares sagrados”|聖地巡礼に行ってきた。|Seichi junrei ni ittekita.|Fui de peregrinación a los lugares del anime.
+t|神回|かみかい|episodio legendario|0|El mejor capítulo.|Literal “episodio de dios”|今週は神回だった！|Konshuu wa kamikai datta!|¡El episodio de esta semana fue legendario!
+t|課金|かきん|pagar en un juego|0|Microtransacciones.|Literal “cobrar”|ガチャで課金した。|Gacha de kakin shita.|Pagué en el gacha.
+t|布教|ふきょう|convertir a otros en fans|0|Recomendar tu afición con fervor.|Literal “propagar la religión”|友達に布教した。|Tomodachi ni fukyou shita.|Convertí a mi amigo en fan.
+s|ばか||tonto|2|Suave entre cercanos; ofensivo con desconocidos.||ばか、何してるの！|Baka, nani shiteru no!|¡Tonto, qué haces!
+s|間抜け|まぬけ|bobo, descuidado|2|Quien falla por distracción.|Literal “falto de intervalo”|私は間抜けだった。|Watashi wa manuke datta.|Fui un descuidado.
+s|どんくさい||torpe, lento|2|De reflejos o agilidad.||私はどんくさい。|Watashi wa donkusai.|Soy torpe.
+s|ケチ||tacaño|2|Quien no gasta.||彼はケチだね。|Kare wa kechi da ne.|Él es tacaño.
+s|ずるい||injusto, tramposo|0|También lo dicen los niños: ¡no es justo!||それ、ずるい！|Sore, zurui!|¡Eso no es justo!
+s|生意気|なまいき|descarado, impertinente|2|Quien responde sin respeto.||生意気な子だ。|Namaiki na ko da.|Es un niño descarado.
+s|意地悪|いじわる|malintencionado, cruel|2|Pequeñas maldades.|Literal “corazón malo”|意地悪しないで。|Ijiwaru shinaide.|No seas malo conmigo.
+s|頑固|がんこ|terco|2|Quien no cambia de opinión.||父は頑固だ。|Chichi wa ganko da.|Mi padre es terco.
+e|中二病|ちゅうにびょう|fase de creerse especial|0|Del segundo año de secundaria.|Literal “enfermedad de segundo de secundaria”|それは中二病だよ。|Sore wa chuunibyou da yo.|Eso es la fase de creerse especial.
+e|ツンデレ||frío por fuera, cariñoso por dentro|0|ツンツン (seco) + デレデレ (meloso).||彼女はツンデレだ。|Kanojo wa tsundere da.|Ella es tsundere.
+e|ヤンデレ||amor obsesivo y peligroso|0|病む (enfermar) + デレ.||ヤンデレは怖い。|Yandere wa kowai.|Las yandere dan miedo.
+e|天然|てんねん|despistado adorable|0|Ingenuo sin darse cuenta.|Literal “natural”|彼女は天然だ。|Kanojo wa tennen da.|Ella es una despistada adorable.
+e|やれやれ||¡qué remedio! (suspiro)|0|Típico del protagonista cansado.||やれやれ、困ったな。|Yareyare, komatta na.|Ay, qué remedio, qué lío.
+e|覚悟しろ|かくご しろ|¡prepárate!|0|Amenaza de héroe o villano.|Literal “resígnate”|覚悟しろ！|Kakugo shiro!|¡Prepárate!
+e|許さない|ゆるさ ない|no te perdonaré|0|Frase épica antes del combate.||お前を許さない！|Omae o yurusanai!|¡No te perdonaré!
+e|お約束|おやくそく|el cliché esperado|0|Giro típico del género.|Literal “la promesa”|それはお約束だね。|Sore wa oyakusoku da ne.|Eso es el cliché de siempre.
+n|ガタガタ||temblar, traquetear|1|De frío o miedo; también cosas sueltas.||寒くてガタガタ震えた。|Samukute gatagata furueta.|Temblé de frío.
+n|ビクビク||asustado, sobresaltado|1|Miedo o nervios constantes.||彼はいつもビクビクしている。|Kare wa itsumo bikubiku shiteiru.|Siempre está sobresaltado.
+n|ヘトヘト||agotado, exhausto|1|Cansancio extremo.||走ってヘトヘトだ。|Hashitte hetoheto da.|Corrí y estoy agotado.
+n|ぐちゃぐちゃ||hecho un desastre, revuelto|1|Cosas desordenadas o pastosas.||部屋がぐちゃぐちゃだ。|Heya ga guchagucha da.|La habitación es un caos.
+n|ツルツル||liso, resbaladizo|1|Superficies sin fricción (también fideos).||床がツルツルだ。|Yuka ga tsurutsuru da.|El suelo está resbaladizo.
+n|ザラザラ||áspero|1|Opuesto de ツルツル.||この紙はザラザラだ。|Kono kami wa zarazara da.|Este papel es áspero.
+n|ベタベタ||pegajoso|1|También: pegarse mucho a alguien.||手がベタベタする。|Te ga betabeta suru.|Tengo las manos pegajosas.
+n|サラサラ||suave y liso (pelo), fluido|1|Cabello sedoso o líquidos fluidos.||髪がサラサラだ。|Kami ga sarasara da.|Tiene el pelo liso y suave.
+n|カラカラ||reseco|1|Garganta o clima seco.||のどがカラカラだ。|Nodo ga karakara da.|Tengo la garganta seca.
+n|しとしと||llovizna fina y callada|1|Lluvia suave, típica de la temporada de lluvias.||雨がしとしと降る。|Ame ga shitoshito furu.|Cae una lluvia fina.
+n|ポツポツ||gotas sueltas|1|Primeras gotas o puntos dispersos.||雨がポツポツ降ってきた。|Ame ga potsupotsu futte kita.|Empezaron a caer gotas.
+n|ピカピカ||reluciente, impecable|1|Muy limpio o nuevo.||靴をピカピカにした。|Kutsu o pikapika ni shita.|Dejé los zapatos relucientes.
+n|ギラギラ||deslumbrante, ardiente|1|Sol fuerte o luces intensas.||太陽がギラギラ照る。|Taiyou ga giragira teru.|El sol brilla con fuerza.
+n|ジロジロ||mirar fijamente (molesto)|1|Mirada insistente e incómoda.||人にジロジロ見られた。|Hito ni jirojiro mirareta.|Me miraron fijamente.
+n|チラチラ||mirar de reojo, titilar|1|Miradas rápidas y disimuladas.||彼女をチラチラ見る。|Kanojo o chirachira miru.|La miro de reojo.
+n|ニヤニヤ||sonreír con picardía|1|A veces con segundas intenciones.||彼はニヤニヤしている。|Kare wa niyaniya shiteiru.|Sonríe con picardía.
+n|ニコニコ||sonreír con calidez|1|Sonrisa amable y natural.||赤ちゃんがニコニコしている。|Akachan ga nikoniko shiteiru.|El bebé sonríe.
+n|モグモグ||masticar|1|Comer con la boca llena.||モグモグ食べる。|Mogumogu taberu.|Come masticando.
+n|ゴクゴク||beber a grandes tragos|1|Sonido de tragar líquido.||水をゴクゴク飲んだ。|Mizu o gokugoku nonda.|Bebí agua a grandes tragos.
+n|シーン||silencio total|1|Muy usado en manga como efecto visual.||教室がシーンとなった。|Kyoushitsu ga shiin to natta.|La clase quedó en silencio.
+n|ガーン||¡golpe! (shock)|1|Sonido de impacto emocional.||ガーン！ 忘れた！|Gaan! Wasureta!|¡Qué golpe! ¡Lo olvidé!
+n|ぐるぐる||girar, dar vueltas|1|Movimientos circulares o mareo.||頭がぐるぐる回る。|Atama ga guruguru mawaru.|La cabeza me da vueltas.
+n|トントン||golpecitos suaves|1|Llamar a la puerta o palmaditas.||ドアをトントンと叩く。|Doa o tonton to tataku.|Llamo a la puerta con golpecitos.
+n|ガヤガヤ||bullicio de multitud|1|Voces mezcladas en un lugar concurrido.||駅の中がガヤガヤしている。|Eki no naka ga gayagaya shiteiru.|La estación está bulliciosa.
+n|ブツブツ||murmurar, quejarse|1|Hablar entre dientes.||ブツブツ文句を言う。|Butsubutsu monku o iu.|Murmura quejas.
+n|ウトウト||dormitar|1|Quedarse medio dormido.||電車でウトウトした。|Densha de utouto shita.|Cabeceé en el tren.
+n|ヒソヒソ||susurrar, cuchichear|1|Hablar en voz muy baja.||ヒソヒソ話している。|Hisohiso hanashiteiru.|Cuchichean.
+n|ズキズキ||dolor punzante|1|Dolores que laten.||頭がズキズキする。|Atama ga zukizuki suru.|Me late dolorosamente la cabeza.
+n|ヒリヒリ||escozor|1|Piel irritada o comida picante.||日焼けでヒリヒリする。|Hiyake de hirihiri suru.|Me escuece la quemadura.
+n|フラフラ||mareado, tambaleante|1|Falta de equilibrio.||熱でフラフラだ。|Netsu de furafura da.|Estoy mareado por la fiebre.
+n|バタバタ||ajetreado, correr de aquí para allá|1|Ritmo frenético o pasos fuertes.||朝はバタバタしている。|Asa wa batabata shiteiru.|Las mañanas son ajetreadas.`.trim().split("\n").map(l=>{const a=l.split("|");return{c:a[0],k:a[1],h:a[2],m:a[3],l:+a[4],n:a[5],t:a[6],e:a[7],r:a[8],s:a[9]}});
+const kana=d=>d.h?d.h.replace(/ /g,""):"",rom=d=>ro((d.h||d.k).replace(/(^| )は(?= |$)/g,"$1わ")).replace(/\s+/g," ").trim();
+const fs=k=>k.length>6?"1.1rem":k.length>3?"1.5rem":"2rem";
+// ---- navegación
+function tab(t){$$(".tab").forEach(b=>b.classList.toggle("on",b.dataset.t==t));["ex","qz"].forEach(x=>$("#"+x).hidden=x!=t);if(t=="qz")qset()}
+$$(".tab").forEach(b=>b.onclick=()=>tab(b.dataset.t));
+document.addEventListener("click",e=>{const c=e.target.closest(".c");if(c){c.classList.toggle("open");c.setAttribute("aria-expanded",c.classList.contains("open"))}});
+document.addEventListener("keydown",e=>{if((e.key=="Enter"||e.key==" ")&&e.target.classList.contains("c")){e.preventDefault();e.target.click()}});
+// ---- tarjetas
+function card(d,open){const c=C[d.c];
+ return`<div class="c ${open?"open":""}" style="--a:${c[2]}" tabindex="0" role="button" aria-expanded="${!!open}"><div class="top"><span class="ic">${c[1]}</span><div><b class="k jp" style="font-size:${fs(d.k)}">${d.k}</b><span class="r jp">${d.h?kana(d)+" · ":""}${rom(d)}</span></div><span class="lv l${d.l}">${LV[d.l][0]} ${LV[d.l][1]}</span></div><p class="m">${d.m}</p>${d.t?`<p class="lit">${d.t}</p>`:""}<div class="x"><p class="tip">${JW(d.n)}</p><span class="lb">EJEMPLO</span><div class="ex jp">${d.e}</div><i>${d.r}</i><div>${d.s}</div></div></div>`}
+let cf="*",lf="*",qq="";
+const chips=(arr,key,cur)=>arr.map(([k,t])=>`<button class="chip" ${k==cur?'style="background:var(--red);color:#fff;border-color:var(--red)"':""} data-${key}="${k}">${t}</button>`).join("");
+function render(){
+ $("#cf").innerHTML=chips([["*","✨ Todo"],...Object.entries(C).map(([k,v])=>[k,v[1]+" "+v[0]])],"c",cf);
+ $("#lf").innerHTML=chips([["*","Todo registro"],...LV.map((v,i)=>[i,v[0]+" "+v[1]])],"l",lf);
+ const q=qq.toLowerCase().trim(),L=D.filter(d=>(cf=="*"||d.c==cf)&&(lf=="*"||d.l==+lf)&&(!q||(d.k+kana(d)+rom(d)+d.m+(d.t||"")).toLowerCase().includes(q)));
+ $("#cnt").textContent=L.length+" entradas";
+ const ids=Object.keys(C).filter(k=>L.some(d=>d.c==k));
+ $("#cards").innerHTML=L.length?ids.map(k=>{const c=C[k];return`<section style="--a:${c[2]}"><h2><span class="ic">${c[1]}</span>${c[0]}</h2><p class="pat">${JW(c[3])}</p><div class="grid">${L.filter(d=>d.c==k).map(d=>card(d)).join("")}</div></section>`}).join(""):`<p class="hint">Sin resultados. Prueba otra palabra o quita los filtros.</p>`;
+ $$("[data-c]").forEach(b=>b.onclick=()=>{cf=b.dataset.c;render()});$$("[data-l]").forEach(b=>b.onclick=()=>{lf=b.dataset.l;render()})}
+$("#q").oninput=e=>{qq=e.target.value;render()};
+$("#ta").onclick=()=>{const all=$$("#cards .c"),open=all.some(c=>!c.classList.contains("open"));all.forEach(c=>c.classList.toggle("open",open));$("#ta").textContent=open?"Cerrar todas":"Abrir todas"};
+$("#wod").innerHTML=`<span class="lb">PALABRA DEL DÍA</span>`+card(D[Math.floor(Date.now()/864e5)%D.length],1);
+// ---- quiz
+let qs={m:"mix",s:"*"},qi,sc,bad;
+function qset(){
+ $("#qa").innerHTML=`<h2 style="justify-content:center">Practica el slang</h2><p class="mut">Tipo de pregunta</p><div class="row">${chips([["mix","Mezcla"],["mean","Significado"],["read","Lectura"],["lit","Literal vs real"],["reg","Registro"]],"m",qs.m)}</div><p class="mut">Categoría</p><div class="row">${chips([["*","Todo"],...Object.entries(C).map(([k,v])=>[k,v[1]+" "+v[0]])],"s",qs.s)}</div><button class="go" id="st">Empezar · 10 preguntas</button>`;
+ $$("#qa [data-m]").forEach(b=>b.onclick=()=>{qs.m=b.dataset.m;qset()});$$("#qa [data-s]").forEach(b=>b.onclick=()=>{qs.s=b.dataset.s;qset()});
+ $("#st").onclick=()=>{qi=0;sc=0;bad=[];qnext()}}
+function qnext(){
+ if(qi>=10)return qend();
+ const pool=D.filter(d=>qs.s=="*"||d.c==qs.s),ok={mean:1,reg:1,read:pool.some(d=>d.h),lit:pool.some(d=>d.t)};
+ const m=qs.m=="mix"?pick(["mean","mean","read","lit","reg"].filter(x=>ok[x])):ok[qs.m]?qs.m:"mean";
+ const d=pick(pool.filter(x=>m=="read"?x.h:m=="lit"?x.t:1)),near=shuf(D.filter(x=>x!=d&&x.c==d.c)),far=shuf(D.filter(x=>x!=d&&x.c!=d.c));
+ const mk=(f,ans)=>{const o=[ans];[...near,...far].filter(x=>m=="read"?x.h:1).forEach(x=>{const v=f(x);if(o.length<4&&!o.includes(v))o.push(v)});return shuf(o).map(v=>[v,v])};
+ let h,L,ans;
+ const big=`<div class="big jp" style="font-size:${d.k.length>6?"1.6rem":d.k.length>3?"2.2rem":"3rem"}">${d.k}</div>`;
+ if(m=="mean"){h=big+(d.h?`<div class="r jp">${kana(d)}</div>`:"")+`<p>¿Qué significa?</p>`;ans=d.m;L=mk(x=>x.m,ans)}
+ else if(m=="read"){h=big+`<p>¿Cómo se lee?</p>`;ans=kana(d);L=mk(kana,ans)}
+ else if(m=="lit"){h=`<p class="lit" style="font-size:1.3rem">${d.t}</p><p>Y en la práctica, ¿qué significa?</p>`;ans=d.m;L=mk(x=>x.m,ans)}
+ else{h=big+`<p>¿Cuál es su registro?</p>`;ans=LV[d.l][2];L=LV.map(v=>[v[2],v[0]+" "+v[2]])}
+ $("#qa").innerHTML=`<div class="bar"><i style="width:${qi*10}%"></i></div><p class="mut">Pregunta ${qi+1} de 10 · ${sc} correctas</p>${h}`+L.map(([v,t],j)=>`<button class="o jp" data-j="${j}">${t}</button>`).join("")+`<div class="fb" id="fb"></div><button class="go" id="nx" hidden>Siguiente</button>`;
+ $$(".o").forEach(b=>b.onclick=()=>{const good=L[b.dataset.j][0]==ans;if(good)sc++;else bad.push(d.k+" = "+d.m);
+  $$(".o").forEach(x=>{x.disabled=true;if(L[x.dataset.j][0]==ans)x.classList.add("ok")});if(!good)b.classList.add("bad");
+  $("#fb").innerHTML=`<strong style="color:var(--${good?"ok":"bad"})">${good?"✔ ¡Correcto!":"✘ Casi"}</strong><b class="jp">${d.k}</b> ${d.h?"("+kana(d)+" · ":"("}${rom(d)}) = ${d.m} ${LV[d.l][0]}<br>${JW(d.n)}<br><span class="ex jp">${d.e}</span><br><i>${d.r}</i> · ${d.s}`;
+  $("#nx").hidden=false;$("#nx").textContent=qi<9?"Siguiente":"Ver resultado";$("#nx").focus();$("#nx").onclick=()=>{qi++;qnext()}})}
+function qend(){
+ $("#qa").innerHTML=`<div class="sun jp">${sc}</div><h2 style="justify-content:center">${sc} de 10</h2><p>${sc>=9?"¡Hablas como local!":sc>=6?"Buen avance. Repasa lo que fallaste.":"Mira las tarjetas y vuelve a intentarlo."}</p>${bad.length?`<p class="lb">PARA REPASAR</p><p class="jp">${bad.join("<br>")}</p>`:""}<button class="go" id="again">Jugar de nuevo</button>`;
+ $("#again").onclick=qset}
+render();
+</script></body></html>
